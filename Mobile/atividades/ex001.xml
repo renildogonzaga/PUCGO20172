@@ -1,0 +1,19 @@
+<?xml version="1.0?">
+<pessoa>
+	<universidade>
+		<id>123</id>
+		<sigla>"ABC"</sigla>
+		<nome>"NOME UNIVERSIDADE"/nome>
+		<endereco>"ENDERECO UNIVERSIDADE"</endereco>
+		<site>"site@universidade.com.br"</site>
+	</universidade>
+</pessoa>
+
+Universidade (id, sigla, nome, endereço e site)
+} Professor (id, cpf, nome, endereço e telefone)
+} Sala (id, número, tipo (lab/pre), área, bloco)
+} Aluno (id, cpf, nome, data de nascimento, endereço e
+telefone)
+} Curso (id, sigla, nome)
+} Aula (aluno, sala, curso, professor, dia da semana,
+horário)

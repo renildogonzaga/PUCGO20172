@@ -1,0 +1,3 @@
+INDEX VERSION 1.129+E:\ADS\4PERIODO\Mobile\.metadata\.plugins\org.eclipse.jdt.core
+379238337.index
+1408797166.index
