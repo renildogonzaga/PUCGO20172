@@ -1,0 +1,29 @@
+package ex001json;
+import java.io.IOException;
+import java.io.BufferedReader;
+import java.io.FileReader;
+
+import com.google.gson.Gson;
+
+public class Main {
+	public static void main(String[] args) {
+
+		Gson gson = new Gson();
+
+		try {
+
+			System.out.println("Reading JSON from a file");
+			System.out.println("----------------------------");
+
+			BufferedReader br = new BufferedReader(new FileReader("C:ex002.json"));
+
+			// convert the json string back to object
+			universidade univ = gson.fromJson(br, universidade.class);
+
+			System.out.println("Universidade: " + univ.getNome());
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+}

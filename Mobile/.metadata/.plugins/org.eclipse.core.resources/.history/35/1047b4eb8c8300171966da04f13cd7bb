@@ -1,0 +1,70 @@
+package ex001json;
+import java.io.IOException;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.FileWriter;
+import com.google.gson.GsonBuilder;
+import com.google.gson.Gson;
+
+public class Main {
+	public static void main(String[] args) {
+
+		Gson gson = new Gson();
+		
+		Universidade uni = new Universidade();
+		uni.setId(222);
+		uni.setNome("PUCGO");
+		uni.setEndereco("rua 10");
+		uni.setSigla("puc");
+		uni.setSite("puc@puc.com");
+		
+		Professor prof = new Professor();
+		prof.setCpf("123123123");
+		prof.setId(333);
+		prof.setNome("fulano");
+		
+		Sala sala = new Sala();
+		sala.setArea("a");
+		sala.setId(12);
+		sala.setNumero("5656");
+		sala.setTipo("abc");
+		
+		Aluno aluno = new Aluno();
+		aluno.setCpf("321312321");
+		aluno.setData_nasc("19900101");
+		aluno.setEndereco("rua rio verde");
+		aluno.setId(8989);
+		aluno.setNome("ALUNO001");
+		
+		Dados dados = new Dados();
+		dados.setUniversidade(uni);
+		dados.setProfessor(prof);
+		dados.setSala(sala);
+		dados.setAluno(aluno);
+		
+		String json1 = gson.toJson(dados);
+		
+		try{
+			   FileWriter writer = new FileWriter("F:\\test002.json");
+			   writer.write(json1);
+			   writer.close();	   
+		}	catch (Exception e) {
+			// TODO: handle exception
+		}
+
+		try {
+
+			System.out.println("Reading JSON from a file");
+			System.out.println("----------------------------");
+			Gson gson2 = new GsonBuilder().create();
+			BufferedReader br = new BufferedReader(new FileReader("F:\\test002.json"));
+			Dados dados2 = gson2.fromJson(br, Dados.class);
+			System.out.println("Universidade: " + dados2.getUniversidade());
+			System.out.println("Professor: " + dados2.getProfessor());
+			System.out.println("Sala: " + dados2.getSala());
+			System.out.println("Aluno: " + dados2.getAluno());
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+}

@@ -1,29 +1,24 @@
 {
-"universidade":{
-	"id":123,
-	"sigla": "ABC",
-	"nome": "NOME UNIVERSIDADE",
-	"endereco": "ENDERECO UNIVERSIDADE",
-	"site": "site@universidade.com.br",
-	}
-"professor":{
-	"id":123,
-	"cpf": "123123123-12",
-	"nome": "NOME PROFESSOR",
-	"endereco": [
-		"ENDERECO PROFESSOR"
-		],
-	"telefone": [
-		"9999-5555"
-		]
-	}
+"universidade": {
+"id":123,
+"sigla": "ABC",
+"nome": "NOME UNIVERSIDADE",
+"endereco": "ENDERECO UNIVERSIDADE",
+"site": "site@universidade.com.br"
+},
+"professor": {
+"id":123,
+"cpf": "123123123-12",
+"nome": "NOME PROFESSOR",
+"endereco": ["ENDERECO PROFESSOR","ENDERECO2 PROFESSOR"]
+},
 "sala": {
 	"id": 123,
 	"numero": 543231,
 	"tipo": "tipo",
 	"area": "1",
 	"bloco": "A"
-	}
+	},
 "aluno": {
 	"id": 123,
 	"cpf": "123123123-12",
@@ -35,12 +30,12 @@
 	"telefone": [
 		"9999-4444"
 		]
-	}
+	},
 "curso": {
 	"id": 123,
 	"sigla": "BCDE",
 	"nome": "NOME CURSO"
-	}
+	},
 "aula": {
 	"aluno": 222,
 	"sala": 5,

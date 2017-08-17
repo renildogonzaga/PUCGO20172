@@ -1,19 +1,43 @@
-<?xml version="1.0?">
-<pessoa>
+<?xml version="1.0" encoding="UTF-8" ?>
 	<universidade>
 		<id>123</id>
-		<sigla>"ABC"</sigla>
-		<nome>"NOME UNIVERSIDADE"/nome>
-		<endereco>"ENDERECO UNIVERSIDADE"</endereco>
-		<site>"site@universidade.com.br"</site>
+		<sigla>ABC</sigla>
+		<nome>NOME UNIVERSIDADE</nome>
+		<endereco>ENDERECO UNIVERSIDADE</endereco>
+		<site>site@universidade.com.br</site>
 	</universidade>
-</pessoa>
-
-Universidade (id, sigla, nome, endereço e site)
-} Professor (id, cpf, nome, endereço e telefone)
-} Sala (id, número, tipo (lab/pre), área, bloco)
-} Aluno (id, cpf, nome, data de nascimento, endereço e
-telefone)
-} Curso (id, sigla, nome)
-} Aula (aluno, sala, curso, professor, dia da semana,
-horário)
+	<professor>
+		<id>123</id>
+		<cpf>123123123-12</cpf>
+		<nome>NOME PROFESSOR</nome>
+		<endereco>ENDERECO PROFESSOR</endereco>
+		<endereco>ENDERECO2 PROFESSOR</endereco>
+	</professor>
+	<sala>
+		<id>123</id>
+		<numero>543231</numero>
+		<tipo>tipo</tipo>
+		<area>1</area>
+		<bloco>A</bloco>
+	</sala>
+	<aluno>
+		<id>123</id>
+		<cpf>123123123-12</cpf>
+		<nome>NOME ALUNO</nome>
+		<data_nascimento>19900101</data_nascimento>
+		<endereco>ENDERECO ALUNO</endereco>
+		<telefone>9999-4444</telefone>
+	</aluno>
+	<curso>
+		<id>123</id>
+		<sigla>BCDE</sigla>
+		<nome>NOME CURSO</nome>
+	</curso>
+	<aula>
+		<aluno>222</aluno>
+		<sala>5</sala>
+		<curso>17</curso>
+		<professor>9</professor>
+		<dia_da_semana>DIA DA SEMANA</dia_da_semana>
+		<horario>HORARIO</horario>
+	</aula>

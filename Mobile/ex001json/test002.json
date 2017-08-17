@@ -1,0 +1,1 @@
+{"Universidade":{"id":222,"sigla":"puc","nome":"PUCGO","endereco":"rua 10","site":"puc@puc.com"},"Professor":{"id":333,"cpf":"123123123","nome":"fulano"},"Sala":{"id":12,"numero":"5656","tipo":"abc","area":"a"},"Aluno":{"id":8989,"cpf":"321312321","nome":"ALUNO001","data_nasc":"19900101","endereco":"rua rio verde"}}

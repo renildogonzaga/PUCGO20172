@@ -1,0 +1,20 @@
+package ex001json;
+
+public class Dados {
+	
+	Object Universidade;
+	Object Professor;
+	
+	public Object getUniversidade() {
+		return Universidade;
+	}
+	public void setUniversidade(Object universidade) {
+		Universidade = universidade;
+	}
+	public Object getProfessor() {
+		return Professor;
+	}
+	public void setProfessor(Object professor) {
+		Professor = professor;
+	}
+}
