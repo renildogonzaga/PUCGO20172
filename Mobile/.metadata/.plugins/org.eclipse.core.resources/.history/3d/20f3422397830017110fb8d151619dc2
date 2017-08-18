@@ -1,0 +1,26 @@
+package ex001xml;
+import com.thoughtworks.xstream.XStream;
+import com.thoughtworks.*;
+
+public class Main {
+public static void main(String[] args) {
+	
+	
+	
+	XStream xstream = new XStream();
+	xstream.alias("universidade", Universidade.class);
+	
+	Universidade uni = new Universidade();
+	uni.setId(222);
+	uni.setNome("PUCGO");
+	uni.setEndereco("rua 10");
+	uni.setSigla("puc");
+	uni.setSite("puc@puc.com");
+	
+	String xml = xstream.toXML(uni);
+		 
+		
+		
+	}
+
+}

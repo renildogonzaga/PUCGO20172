@@ -2,6 +2,7 @@ package ex001json;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class Universidade {
 	
 	//Universidade (id, sigla, nome, endereço e site)

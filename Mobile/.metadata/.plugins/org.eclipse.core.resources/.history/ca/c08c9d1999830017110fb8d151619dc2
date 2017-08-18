@@ -1,0 +1,50 @@
+package ex001xml;
+import com.thoughtworks.xstream.XStream;
+
+public class Main {
+public static void main(String[] args) {
+	
+	Universidade uni = new Universidade();
+	uni.setId(222);
+	uni.setNome("PUCGO");
+	uni.setEndereco("rua 10");
+	uni.setSigla("puc");
+	uni.setSite("puc@puc.com");
+	
+	Professor prof = new Professor();
+	prof.setCpf("123123123");
+	prof.setId(333);
+	prof.setNome("fulano");
+	
+	Sala sala = new Sala();
+	sala.setArea("a");
+	sala.setId(12);
+	sala.setNumero("5656");
+	sala.setTipo("abc");
+	
+	Aluno aluno = new Aluno();
+	aluno.setCpf("321312321");
+	aluno.setData_nasc("19900101");
+	aluno.setEndereco("rua rio verde");
+	aluno.setId(8989);
+	aluno.setNome("ALUNO001");
+	
+	Dados dados = new Dados();
+	dados.setUniversidade(uni);
+	dados.setProfessor(prof);
+	dados.setSala(sala);
+	dados.setAluno(aluno);
+	
+	XStream xstream = new XStream();
+	xstream.alias("universidade", Universidade.class);
+	xstream.alias("professor", Professor.class);
+	xstream.alias("sala", Sala.class);
+	xstream.alias("aluno", Aluno.class); 
+	String xml = xstream.toXML(dados);
+	System.out.println(xml);
+	
+	//Dados dados2 = (Dados)xstream.fromXML(xml);
+	Universidade uni2 = (Universidade)xstream.fromXML(xml);
+		 
+	}
+}

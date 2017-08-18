@@ -5,4 +5,7 @@
 <fullyQualifiedTypeName name="ex001json.Professor"/>
 <fullyQualifiedTypeName name="com.google.gson.GsonBuilder"/>
 <fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="com.thoughtworks.xstream.XStream"/>
+<fullyQualifiedTypeName name="ex001xml.Universidade"/>
+<fullyQualifiedTypeName name="com.thoughtworks.xstream.io.xml.StaxDriver"/>
 </qualifiedTypeNameHistroy>
