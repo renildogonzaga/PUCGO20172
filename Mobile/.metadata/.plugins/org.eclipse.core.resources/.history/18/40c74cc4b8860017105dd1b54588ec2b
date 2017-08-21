@@ -69,28 +69,14 @@ public static void main(String[] args) {
 	xstream2.alias("curso", Curso.class);
 	xstream2.alias("aula", Aula.class); 
 	Dados dados2 = (Dados)xstream2.fromXML(xml);
+	//Object uni2 = new Universidade();
+	//uni2 = dados2.getUniversidade();
 	
 	Universidade uni2 = new Universidade();
-	uni2 = (Universidade) dados2.Universidade;
 	
-	Professor prof2 = new Professor();
-	prof2 = (Professor)dados2.Professor;
+	uni2.equals(dados2.Universidade.getClass());
 	
-	Sala sala2 = new Sala();
-	sala2 = (Sala) dados2.Sala;
-	
-	Aluno aluno2 = new Aluno();
-	aluno2 = (Aluno)dados2.Aluno;
-	
-	Curso curso2 = new Curso();
-	curso2 = (Curso)dados2.Curso;
-	
-	Aula aula2 = new Aula();
-	aula2 = (Aula)dados2.Aula;
-	
-	System.out.println("\nID Aluno: "+aula2.getId_aluno());
-	System.out.println("Nome Faculdade: "+uni2.getNome());
-	System.out.println("Nome Professor: "+prof2.getNome());
+	System.out.println("\n\n testt: "+uni2.getSigla());
 	 
 	}
 }

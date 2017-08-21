@@ -4,13 +4,12 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileWriter;
 import com.google.gson.GsonBuilder;
-
 import com.google.gson.Gson;
 
 public class Main {
 	public static void main(String[] args) {
 		String path = ((System.getProperty("user.dir")));
-		//System.out.println(path);
+		System.out.println(path);
 		Gson gson = new Gson();
 		
 		Universidade uni = new Universidade();
@@ -70,10 +69,12 @@ public class Main {
 		}
 
 		try {
+
+			System.out.println("Reading JSON from a file");
+			System.out.println("----------------------------");
 			Gson gson2 = new GsonBuilder().create();
 			BufferedReader br = new BufferedReader(new FileReader(System.getProperty("user.dir")+"\\test002.json"));
 			Dados dados2 = gson2.fromJson(br, Dados.class);
-
 			System.out.println("Universidade: " + dados2.getUniversidade());
 			System.out.println("Professor: " + dados2.getProfessor());
 			System.out.println("Sala: " + dados2.getSala());
