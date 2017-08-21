@@ -37,11 +37,26 @@ public class Main {
 		aluno.setId(8989);
 		aluno.setNome("ALUNO001");
 		
+		Curso curso = new Curso();
+		curso.setId(10);
+		curso.setNome("Analise e Desenv. Sist.");
+		curso.setSigla("ADS");
+		
+		Aula aula = new Aula();
+		aula.setId_aluno(aluno.getId());
+		aula.setId_sala(sala.getId());
+		aula.setId_curso(curso.getId());
+		aula.setId_professor(prof.getId());
+		aula.setDia_semana("segunda");
+		aula.setHorario("18:45 - 20:30");
+		
 		Dados dados = new Dados();
 		dados.setUniversidade(uni);
 		dados.setProfessor(prof);
 		dados.setSala(sala);
 		dados.setAluno(aluno);
+		dados.setCurso(curso);
+		dados.setAula(aula);
 		
 		String json1 = gson.toJson(dados);
 		
@@ -64,6 +79,9 @@ public class Main {
 			System.out.println("Professor: " + dados2.getProfessor());
 			System.out.println("Sala: " + dados2.getSala());
 			System.out.println("Aluno: " + dados2.getAluno());
+			System.out.println("Curso: " + dados2.getCurso());
+			System.out.println("Aula: " + dados2.getAula());
+			
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

@@ -6,6 +6,8 @@ public class Dados {
 	Object Professor;
 	Object Sala;
 	Object Aluno;
+	Object Curso;
+	Object Aula;
 	
 	public Object getUniversidade() {
 		return Universidade;
@@ -30,5 +32,18 @@ public class Dados {
 	}
 	public void setAluno(Object aluno) {
 		Aluno = aluno;
+	}
+	
+	public Object getCurso() {
+		return Curso;
+	}
+	public void setCurso(Object curso) {
+		this.Curso = curso;
+	}
+	public Object getAula() {
+		return Aula;
+	}
+	public void setAula(Object aula) {
+		this.Aula = aula;
 	}
 }

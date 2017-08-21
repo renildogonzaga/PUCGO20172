@@ -6,6 +6,9 @@
 <fullyQualifiedTypeName name="com.google.gson.GsonBuilder"/>
 <fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="com.thoughtworks.xstream.XStream"/>
-<fullyQualifiedTypeName name="ex001xml.Universidade"/>
 <fullyQualifiedTypeName name="com.thoughtworks.xstream.io.xml.StaxDriver"/>
+<fullyQualifiedTypeName name="ex001xml.Universidade"/>
+<fullyQualifiedTypeName name="ex001xml.Dados"/>
+<fullyQualifiedTypeName name="java.lang.Class"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
 </qualifiedTypeNameHistroy>
