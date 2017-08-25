@@ -73,13 +73,32 @@ public class Main {
 			Gson gson2 = new GsonBuilder().create();
 			BufferedReader br = new BufferedReader(new FileReader(System.getProperty("user.dir")+"\\test002.json"));
 			Dados dados2 = gson2.fromJson(br, Dados.class);
-
-			System.out.println("Universidade: " + dados2.getUniversidade());
+			
+			Universidade uni2 = new Universidade();
+			uni2 = (Universidade) dados2.getUniversidade();
+			
+			/*
+			Professor prof2 = new Professor();
+			prof2 = (Professor)dados2.Professor;
+			
+			Sala sala2 = new Sala();
+			sala2 = (Sala) dados2.Sala;
+			
+			Aluno aluno2 = new Aluno();
+			aluno2 = (Aluno)dados2.Aluno;
+			
+			Curso curso2 = new Curso();
+			curso2 = (Curso)dados2.Curso;
+			
+			Aula aula2 = new Aula();
+			aula2 = (Aula)dados2.Aula;
+			*/
+			System.out.println("Universidade: " + uni2.getNome());/*
 			System.out.println("Professor: " + dados2.getProfessor());
 			System.out.println("Sala: " + dados2.getSala());
 			System.out.println("Aluno: " + dados2.getAluno());
 			System.out.println("Curso: " + dados2.getCurso());
-			System.out.println("Aula: " + dados2.getAula());
+			System.out.println("Aula: " + dados2.getAula());*/
 			
 		} catch (IOException e) {
 			e.printStackTrace();
