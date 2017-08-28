@@ -11,4 +11,6 @@
 <fullyQualifiedTypeName name="ex001xml.Dados"/>
 <fullyQualifiedTypeName name="java.lang.Class"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="ex001xml.Professor"/>
+<fullyQualifiedTypeName name="ex001json.Universidade"/>
 </qualifiedTypeNameHistroy>
