@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//src/br/pucgoias/cmp1144/PrimeiroServico.java=UTF-8
+encoding//src/br/pucgoias/cmp1144/PrimeiroServicoService.java=UTF-8
+encoding//src/br/pucgoias/cmp1144/PrimeiroServicoServiceLocator.java=UTF-8
+encoding//src/br/pucgoias/cmp1144/PrimeiroServicoSoapBindingStub.java=UTF-8
+encoding//src/br/pucgoias/cmp1144/controle/PessoaController.java=UTF-8
+encoding//src/br/pucgoias/cmp1144/controle/PessoaControllerService.java=UTF-8
+encoding//src/br/pucgoias/cmp1144/controle/PessoaControllerServiceLocator.java=UTF-8
+encoding//src/br/pucgoias/cmp1144/controle/PessoaControllerSoapBindingStub.java=UTF-8
+encoding//src/br/pucgoias/cmp1144/entidade/Pessoa.java=UTF-8

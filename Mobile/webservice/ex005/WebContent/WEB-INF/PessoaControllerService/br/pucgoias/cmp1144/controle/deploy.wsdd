@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Use this file to deploy some handlers/chains and services      --><!-- Two ways to do this:                                           --><!--   java org.apache.axis.client.AdminClient deploy.wsdd          --><!--      after the axis server is running                          --><!-- or                                                             --><!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   --><!--      from the same directory that the Axis engine runs         --><deployment xmlns="http://xml.apache.org/axis/wsdd/" xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from PessoaControllerService WSDL service -->
+
+  <service name="PessoaController" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://controle.cmp1144.pucgoias.br"/>
+      <parameter name="wsdlServiceElement" value="PessoaControllerService"/>
+      <parameter name="schemaQualified" value="http://entidade.cmp1144.pucgoias.br,http://controle.cmp1144.pucgoias.br"/>
+      <parameter name="wsdlServicePort" value="PessoaController"/>
+      <parameter name="className" value="br.pucgoias.cmp1144.controle.PessoaController"/>
+      <parameter name="wsdlPortType" value="PessoaController"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation xmlns:operNS="http://controle.cmp1144.pucgoias.br" xmlns:retNS="http://controle.cmp1144.pucgoias.br" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="hello" qname="operNS:hello" returnQName="retNS:helloReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://controle.cmp1144.pucgoias.br" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:nome" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://controle.cmp1144.pucgoias.br" xmlns:retNS="http://controle.cmp1144.pucgoias.br" xmlns:rtns="http://entidade.cmp1144.pucgoias.br" name="getPessoaXML" qname="operNS:getPessoaXML" returnQName="retNS:getPessoaXMLReturn" returnType="rtns:Pessoa" soapAction="">
+        <parameter xmlns:pns="http://controle.cmp1144.pucgoias.br" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:nome" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://controle.cmp1144.pucgoias.br" xmlns:retNS="http://controle.cmp1144.pucgoias.br" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="getPessoaJSON" qname="operNS:getPessoaJSON" returnQName="retNS:getPessoaJSONReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://controle.cmp1144.pucgoias.br" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:nome" type="tns:string"/>
+      </operation>
+      <parameter name="allowedMethods" value="getPessoaXML hello getPessoaJSON"/>
+
+      <typeMapping xmlns:ns="http://entidade.cmp1144.pucgoias.br" qname="ns:Pessoa" type="java:br.pucgoias.cmp1144.entidade.Pessoa" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+  </service>
+</deployment>
