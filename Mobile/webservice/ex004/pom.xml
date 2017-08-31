@@ -2,10 +2,10 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>br.pucgoias.cmp1144</groupId>
-  <artifactId>springws</artifactId>
+  <artifactId>ex004</artifactId>
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
-  <name>springws Maven Webapp</name>
+  <name>ex004 Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
@@ -51,7 +51,7 @@
     </dependency>
   </dependencies>
 	  <build>
-		<finalName>aula05</finalName>
+		<finalName>ex004</finalName>
 		  <plugins>  
 		   <plugin>  
 			<groupId>org.apache.maven.plugins</groupId>  
