@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<wsdl:definitions targetNamespace="http://controle.cmp1144.pucgoias.br" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://controle.cmp1144.pucgoias.br" xmlns:intf="http://controle.cmp1144.pucgoias.br" xmlns:tns1="http://entidade.cmp1144.pucgoias.br" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<wsdl:definitions targetNamespace="http://controle.cmp1144.pucgoias.br" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://controle.cmp1144.pucgoias.br" xmlns:intf="http://controle.cmp1144.pucgoias.br" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 <!--WSDL created by Apache Axis version: 1.4
 Built on Apr 22, 2006 (06:55:48 PDT)-->
  <wsdl:types>
   <schema elementFormDefault="qualified" targetNamespace="http://controle.cmp1144.pucgoias.br" xmlns="http://www.w3.org/2001/XMLSchema">
-   <import namespace="http://entidade.cmp1144.pucgoias.br"/>
    <element name="hello">
     <complexType>
      <sequence>
@@ -29,7 +28,7 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
    <element name="getPessoaXMLResponse">
     <complexType>
      <sequence>
-      <element name="getPessoaXMLReturn" type="tns1:Pessoa"/>
+      <element name="getPessoaXMLReturn" type="xsd:string"/>
      </sequence>
     </complexType>
    </element>
@@ -47,16 +46,6 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
      </sequence>
     </complexType>
    </element>
-  </schema>
-  <schema elementFormDefault="qualified" targetNamespace="http://entidade.cmp1144.pucgoias.br" xmlns="http://www.w3.org/2001/XMLSchema">
-   <complexType name="Pessoa">
-    <sequence>
-     <element name="email" nillable="true" type="xsd:string"/>
-     <element name="id" nillable="true" type="xsd:int"/>
-     <element name="idade" nillable="true" type="xsd:int"/>
-     <element name="nome" nillable="true" type="xsd:string"/>
-    </sequence>
-   </complexType>
   </schema>
  </wsdl:types>
 

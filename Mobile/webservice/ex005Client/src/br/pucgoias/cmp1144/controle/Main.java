@@ -8,7 +8,6 @@ public class Main {
 		
 		PessoaControllerServiceLocator pservice = new PessoaControllerServiceLocator();
 		try {
-			System.out.println(pservice.getPessoaController().hello("ola"));
 			System.out.println(pservice.getPessoaController().getPessoaJSON("RENILDO"));
 			//System.out.println("*******");
 			System.out.println(pservice.getPessoaController().getPessoaXML("RENILDO"));

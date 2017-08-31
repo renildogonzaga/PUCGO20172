@@ -71,4 +71,5 @@
 	  <jackson.version>2.4.4</jackson.version>
 	  <xmlbind.version>2.2.7</xmlbind.version>
 	</properties> 
+	<packaging>war</packaging>
 </project>
