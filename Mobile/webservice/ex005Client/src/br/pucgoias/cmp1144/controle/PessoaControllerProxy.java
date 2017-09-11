@@ -50,7 +50,7 @@ public class PessoaControllerProxy implements br.pucgoias.cmp1144.controle.Pesso
     return pessoaController.hello(nome);
   }
   
-  public br.pucgoias.cmp1144.entidade.Pessoa getPessoaXML(java.lang.String nome) throws java.rmi.RemoteException{
+  public java.lang.String getPessoaXML(java.lang.String nome) throws java.rmi.RemoteException{
     if (pessoaController == null)
       _initPessoaControllerProxy();
     return pessoaController.getPessoaXML(nome);
